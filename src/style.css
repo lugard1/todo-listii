@@ -19,19 +19,20 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.756);
+  background-color: #fff;
   border-radius: 8px 8px 0 0;
 }
 
 .fa-arrows-rotate {
-  font-size: 25px;
+  font-size: 20px;
   padding-right: 15px;
 }
 
 .addInput {
   width: 80%;
-  padding: 15px;
+  padding: 10px;
   margin-left: 17px;
+  border: none;
 }
 
 .display-list {
@@ -41,23 +42,28 @@ main {
 
 .fa-ellipsis-vertical {
   padding-left: 65px;
-  font-size: 30px;
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .checkbox {
   margin-left: 10px;
-  padding: 15px;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
 }
 
 .input {
   width: 78%;
-  padding: 15px;
+  padding: 10px;
   margin-left: 5px;
   font-size: 16px;
+  border: none;
+  vertical-align: middle;
 }
 
 .fa-arrow-right-to-bracket {
-  font-size: 25px;
+  font-size: 20px;
   padding-right: 15px;
 }
 
@@ -98,12 +104,12 @@ span {
   width: 100%;
   display: block;
   border: none;
-  background-color: blueviolet;
+  background-color: rgba(211, 211, 211, 0.96);
   padding: 20px 0;
-  margin: auto;
+  margin: 0 auto;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  color: #fff;
+  color: #000;
   border-radius: 0 0 8px 8px;
 }

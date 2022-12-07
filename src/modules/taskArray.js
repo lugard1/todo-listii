@@ -14,6 +14,13 @@ const taskArray = [
     completed: false,
     index: 2,
   },
+  {
+    description: 'Complete eating lunch',
+    completed: false,
+    index: 3,
+  },
 ];
+
+taskArray.sort((a, b) => a.index - b.index);
 
 export default taskArray;
