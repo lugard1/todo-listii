@@ -180,7 +180,7 @@ Example:
 <!-- AUTHORS -->
 
 ## 👤 Author <a name="authors"></a>
-- GitHub: [@Lugard Agu](https://github.com/lugard1)
+- GitHub: [@lugard1](https://github.com/lugard1)
 - Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
 - LinkedIn: [Lugard Agu](https://linkedin.com/in/linkedinhandle)
 
