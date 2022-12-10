@@ -62,7 +62,7 @@ const displayTasks = () => {
   }
 
   /* Delete completed */
-  
+
   const deleteCompleted = document.querySelector('.completed-text');
   const allCheckBoxes = document.querySelectorAll('input[type=checkbox]');
 
