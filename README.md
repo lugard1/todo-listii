@@ -211,6 +211,8 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > I would like to thank all those that inspired the success of this project.
+- OscarFMDev
+- Prantosh Biswas
 
 <!-- LICENSE -->
 

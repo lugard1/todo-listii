@@ -5,7 +5,7 @@ import addObjToLocalStorage from './objectToLS.js';
 import { store, taskArray } from './store.js';
 
 const displayTasks = () => {
-  const tasksContainer = document.querySelector('.tasks-container');
+  const tasksContainer = document.querySelector('.toDo-list');
   tasksContainer.innerHTML = '';
   taskArray.sort((a, b) => a.index - b.index).map((task) => task.description);
   taskArray.forEach((task, index) => {
@@ -62,10 +62,23 @@ const displayTasks = () => {
   }
 
   /* Delete completed */
+
+  const deleteCompleted = document.querySelector('.completed-text');
   const allCheckBoxes = document.querySelectorAll('input[type=checkbox]');
 
+  function clearCompleted(elem) {
+    return elem.completed !== true;
+  }
+
+  deleteCompleted.addEventListener('click', () => {
+    const data = taskArray.filter(clearCompleted);
+    data.sort((a, b) => a.index - b.index);
+    localStorage.setItem('taskInput', JSON.stringify(data));
+    window.location.reload();
+  });
+
   for (let i = 0; i < allCheckBoxes.length; i += 1) {
-    allCheckBoxes[i].addEventListener('click', (e) => {
+    allCheckBoxes[i].addEventListener('change', (e) => {
       checkBoxesStatus(e);
       displayTasks();
     });
@@ -78,6 +91,14 @@ const displayTasks = () => {
       edit(e);
     });
   }
+
+  /* Delete all */
+  const deleteAll = document.querySelector('.reload-icon');
+  deleteAll.addEventListener('click', () => {
+    taskArray.splice(0, taskArray.length);
+    store();
+    displayTasks();
+  });
 };
 
 export default displayTasks;
