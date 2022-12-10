@@ -62,6 +62,7 @@ const displayTasks = () => {
   }
 
   /* Delete completed */
+  
   const deleteCompleted = document.querySelector('.completed-text');
   const allCheckBoxes = document.querySelectorAll('input[type=checkbox]');
 
@@ -77,7 +78,7 @@ const displayTasks = () => {
   });
 
   for (let i = 0; i < allCheckBoxes.length; i += 1) {
-    allCheckBoxes[i].addEventListener('click', (e) => {
+    allCheckBoxes[i].addEventListener('change', (e) => {
       checkBoxesStatus(e);
       displayTasks();
     });
