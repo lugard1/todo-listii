@@ -71,7 +71,7 @@ const displayTasks = () => {
 
   deleteCompleted.addEventListener('click', () => {
     const data = taskArray.filter(clearCompleted);
-    data.sort((a, b) => a.index - b.index),
+    data.sort((a, b) => a.index - b.index);
     localStorage.setItem('taskInput', JSON.stringify(data));
     window.location.reload();
   });
@@ -91,13 +91,13 @@ const displayTasks = () => {
     });
   }
 
-   /* Delete all */
- const deleteAll = document.querySelector('.reload-icon');
- deleteAll.addEventListener('click', () => {
-   taskArray.splice(0, taskArray.length);
-   store();
-   displayTasks();
- });
+  /* Delete all */
+  const deleteAll = document.querySelector('.reload-icon');
+  deleteAll.addEventListener('click', () => {
+    taskArray.splice(0, taskArray.length);
+    store();
+    displayTasks();
+  });
 };
 
 export default displayTasks;
