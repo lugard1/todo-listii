@@ -2,7 +2,7 @@ import addObjToLocalStorage from './objectToLS.js';
 import { store, taskArray } from './store.js';
 
 const submit = document.querySelector('.fa-right-from-bracket');
-const tasksContainer = document.querySelector('.tasks-container');
+const tasksContainer = document.querySelector('.toDo-list');
 const taskName = document.querySelector('.new-task');
 
 const addTask = (e) => {
